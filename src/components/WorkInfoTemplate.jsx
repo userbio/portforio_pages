@@ -31,9 +31,9 @@ export const WorksInfo = (props) => {
                         {link}
                         <a href={githubLink} target="_blank" rel="noopener noreferrer"> <img src={githubIcon} alt="" className={classes.linkImage} /></a>
                     </div>
-                    <Route exact path={'/works/' + url } component={bigImage1}/>
-                    <Route exact path={'/works/' + url +'vis2'} component={bigImage2} />
-                    <Route exact path={'/works/' + url +'vis3'} component={bigImage3} />
+                    <Route exact path={'/portforio_pages/works/' + url } component={bigImage1}/>
+                    <Route exact path={'/portforio_pages/works/' + url +'vis2'} component={bigImage2} />
+                    <Route exact path={'/portforio_pages/works/' + url +'vis3'} component={bigImage3} />
                 </BrowserRouter>
             </div>
         </div>

@@ -41,10 +41,10 @@ const Navbar = () => (
       <NavLink exact to='/skillSet' className={classes.headerItem} activeClassName={classes.active}>Skill set</NavLink>
       <NavLink exact to='/contact' className={classes.headerItem} activeClassName={classes.active}>Contact</NavLink>
     </nav>
-    <Route exact path="/" component={Profile} />
-    <Route exact path="/works" component={works} />
-    <Route exact path="/skillSet" component={skillSet} />
-    <Route exact path="/contact" component={contact} />
+    <Route exact path="/portforio_pages/" component={Profile} />
+    <Route exact path="/portforio_pages/works" component={works} />
+    <Route exact path="/portforio_pages/skillSet" component={skillSet} />
+    <Route exact path="/portforio_pages/contact" component={contact} />
     </BrowserRouter>
   </div>
 )

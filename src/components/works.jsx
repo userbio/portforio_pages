@@ -55,11 +55,11 @@ export const works = () => {
                     </NavLink>    
                 </nav>
             </Link>
-                <Route path="/works" component={defoult}/>
-                <Route path="/works/line" component={line} />
-                <Route path="/works/portforio" component={portforio} />
-                <Route path="/works/IPA" component={IPA} />
-                <Route path="/works/hardening" component={hardening} />
+                <Route path="/portforio_pages/works" component={defoult}/>
+                <Route path="/portforio_pages/works/line" component={line} />
+                <Route path="/portforio_pages/works/portforio" component={portforio} />
+                <Route path="/portforio_pages/works/IPA" component={IPA} />
+                <Route path="/portforio_pages/works/hardening" component={hardening} />
             </BrowserRouter>
         </PageTemplate>
     )
