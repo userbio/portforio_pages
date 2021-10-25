@@ -16,13 +16,13 @@ export const WorksInfo = (props) => {
             <div className={`${classes.workContent} ${classes.flexbox}`}>
                 <BrowserRouter>
                     <nav className={classes.mainVis}>
-                        <NavLink exact to={'/works/' + url }>
+                        <NavLink exact to={'/portforio_pages/works/' + url }>
                             <img src={image1} alt="" className={classes.mainVisContent} />
                         </NavLink>
-                        <NavLink exact to={'/works/' + url +'vis2'}>
+                        <NavLink exact to={'/portforio_pages/works/' + url +'vis2'}>
                             <img src={image2} alt="" className={classes.mainVisContent} />
                         </NavLink>
-                        <NavLink exact to={'/works/' + url +'vis3'}>
+                        <NavLink exact to={'/portforio_pages/works/' + url +'vis3'}>
                             <img src={image3} alt="" className={classes.mainVisContent} />
                         </NavLink>  
                     </nav>

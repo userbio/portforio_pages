@@ -43,9 +43,9 @@ export const portforio = () => (
             コンポーネントの考え方やCSSなど、フロントエンドの難しい部分もありましたが良い経験になったと感じています。<br />
             トップの背景画像は、大学の写真部の活動で撮影した春の桜並木の写真です。
         </>}
-        link=""
-        githubIcon=""
-        githubLink=""
+        link={<a href="https://userbio.github.io/portforio_pages/" target="_blank" rel="noopener noreferrer">LINK</a>}
+        githubIcon={github}
+        githubLink="https://github.com/userbio/portforio_pages"
     />
 )
 

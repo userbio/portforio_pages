@@ -36,10 +36,10 @@ const Navbar = () => (
   <div className={classes.navContainer}>
     <BrowserRouter>
     <nav className={`${classes.navbarBackground} ${classes.flexbox}`}>
-      <NavLink exact to='/' className={classes.headerItem} activeClassName={classes.active}>Profile</NavLink>
-      <NavLink exact to='/works' className={classes.headerItem} activeClassName={classes.active}>Works</NavLink>
-      <NavLink exact to='/skillSet' className={classes.headerItem} activeClassName={classes.active}>Skill set</NavLink>
-      <NavLink exact to='/contact' className={classes.headerItem} activeClassName={classes.active}>Contact</NavLink>
+      <NavLink exact to='/portforio_pages/' className={classes.headerItem} activeClassName={classes.active}>Profile</NavLink>
+      <NavLink exact to='/portforio_pages/works' className={classes.headerItem} activeClassName={classes.active}>Works</NavLink>
+      <NavLink exact to='/portforio_pages/skillSet' className={classes.headerItem} activeClassName={classes.active}>Skill set</NavLink>
+      <NavLink exact to='/portforio_pages/contact' className={classes.headerItem} activeClassName={classes.active}>Contact</NavLink>
     </nav>
     <Route exact path="/portforio_pages/" component={Profile} />
     <Route exact path="/portforio_pages/works" component={works} />

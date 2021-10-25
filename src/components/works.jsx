@@ -18,35 +18,35 @@ export const works = () => {
             <BrowserRouter>
             <Link to='workContentBox' smooth={true}>
                 <nav className={classes.worksList}>
-                    <NavLink exact to='/works/line' className={classes.worksItem}>
+                    <NavLink exact to='/portforio_pages/works/line' className={classes.worksItem}>
                         <WorksList 
                             image={lineMain} 
                             name={<>LINEを用いたアルバイトのシフト < br /> 集計サービス</>}
                             info={<>Python、Flask、LINEAPI</>}
                         />
                     </NavLink>
-                    <NavLink exact to='/works/portforio' className={classes.worksItem}>
+                    <NavLink exact to='/portforio_pages/works/portforio' className={classes.worksItem}>
                         <WorksList 
                             image={portMain}
                             name={<>ポートフォリオサイト</>}
                             info={<>JavaScript、React、CSS<br />SPA,Responsive</>}
                         />
                     </NavLink>
-                    <NavLink exact to='/works/IPA' className={classes.worksItem}>
+                    <NavLink exact to='/portforio_pages/works/IPA' className={classes.worksItem}>
                         <WorksList 
                             image={test}
                             name={<>IPA 応用情報技術者試験　合格</>}
                             info={<>基礎知識、マネジメント</>}
                         />
                     </NavLink>
-                    <NavLink exact to='/works/hardening' className={classes.worksItem}>
+                    <NavLink exact to='/portforio_pages/works/hardening' className={classes.worksItem}>
                         <WorksList 
                             image={test}
                             name={<>Micro Hardening for Youth 2021 参加</>}
                             info={<>セキュリティ、チーム活動</>}
                         />
                     </NavLink>
-                    <NavLink exact to='/works' className={classes.worksItem}>
+                    <NavLink exact to='/portforio_pages/works' className={classes.worksItem}>
                         <WorksList 
                             image={test}
                             name={<></>}
