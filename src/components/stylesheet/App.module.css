@@ -181,5 +181,12 @@ img.face {
     background-position:right 3rem top 3rem;
   }
 
-
+  .rightbarContainer{
+    grid-row: 3/4;
+    grid-column: 3/4;
+    background-image: url(./../images/rightBot.png);
+    background-size: 15rem;
+    background-repeat: no-repeat;
+    background-position:bottom left 2.5rem;
+  }
 }
