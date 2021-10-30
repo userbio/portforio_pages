@@ -1,6 +1,5 @@
 import { WorksInfo } from './WorkInfoTemplate';
 
-import test from './images/test.png';
 import github from './images/GitHub.png'
 import lineMain from './images/lineMain.png';
 import lineImage from './images/lineimage.png'
@@ -53,9 +52,6 @@ export const IPA = () => (
     <WorksInfo 
         url="IPA"
         title="IPA　応用情報技術者試験　合格"
-        image1={test}
-        image2={test}
-        image3={test}
         text={<>
             自身のITやコンピューター、ネットワークに関する知識を高め、様々な視点から物事を考えるために受験しました。<br />
             初歩的なアルゴリズムやハードウェアの知識やチームでの開発、フロー、マネジメントなど非常に多くのことを学びました。<br />
@@ -71,15 +67,13 @@ export const hardening = () => (
     <WorksInfo 
         url="hardening"
         title="Micro Hardening for Youth 2021 参加"
-        image1={test}
-        image2={test}
-        image3={test}
         text={<>
             ECサイトへのサイバー攻撃を想定し、実際にサーバーを守ることでセキュリティに関する貴重な実践経験を得ることの出来る競技会に参加しました。<br />
             実際に攻撃が仕掛けられ対応を迫られる中で防衛を行うことで、知識だけに留まらない経験を得ることが出来ました。<br />
-            またその場で即席のチームを作って参加したため、コミュニケーションやチームワークを意識して活動に参加しました。
+            またその場で即席のチームを作って参加したため、コミュニケーションやチームワークを意識して活動に参加しました。<br />
+            ※画像はイメージです。
         </>}
-        link=""
+        link={<a href="https://sc4y.connpass.com/event/223405/#:~:text=Micro%20Hardening%20%E3%81%AF%E3%80%8C%E8%A1%9B%E3%82%8B,%E7%94%9F%E3%81%BE%E3%82%8C%E3%81%9F%E3%82%B5%E3%83%96%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%A7%E3%81%99%E3%80%82" target="_blank" rel="noopener noreferrer">MH4Y2021 HP</a>}
         githubIcon=""
         githubLink=""
     />

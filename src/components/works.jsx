@@ -6,9 +6,10 @@ import { WorksList } from './WorksListTemplate.jsx';
 import { line, portforio, IPA, hardening, defoult } from './workinfo.jsx'
 import classes from './stylesheet/works.module.css';
 
-import test from './images/test.png';
 import lineMain from './images/lineMain.png';
 import portMain from './images/portMain.png'
+import ipa from './images/IPA.jpg'
+import cmd from './images/cmd_img.png'
 
 
 
@@ -34,28 +35,20 @@ export const works = () => {
                     </NavLink>
                     <NavLink exact to='/portforio_pages/works/IPA' className={classes.worksItem}>
                         <WorksList 
-                            image={test}
+                            image={ipa}
                             name={<>IPA 応用情報技術者試験　合格</>}
                             info={<>基礎知識、マネジメント</>}
                         />
                     </NavLink>
                     <NavLink exact to='/portforio_pages/works/hardening' className={classes.worksItem}>
                         <WorksList 
-                            image={test}
+                            image={cmd}
                             name={<>Micro Hardening for Youth 2021 参加</>}
                             info={<>セキュリティ、チーム活動</>}
                         />
-                    </NavLink>
-                    <NavLink exact to='/portforio_pages/works' className={classes.worksItem}>
-                        <WorksList 
-                            image={test}
-                            name={<></>}
-                            info={<>Coming soon</>}
-                        />
-                    </NavLink>    
+                    </NavLink> 
                 </nav>
             </Link>
-                <Route path="/portforio_pages/works" component={defoult}/>
                 <Route path="/portforio_pages/works/line" component={line} />
                 <Route path="/portforio_pages/works/portforio" component={portforio} />
                 <Route path="/portforio_pages/works/IPA" component={IPA} />

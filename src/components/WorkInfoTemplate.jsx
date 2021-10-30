@@ -12,28 +12,37 @@ export const WorksInfo = (props) => {
 
     return (
         <div className={classes.workContentBox}>
+            {console.log()}
             <div className={classes.workTitle}>{title}</div>
             <div className={`${classes.workContent} ${classes.flexbox}`}>
                 <BrowserRouter>
-                    <nav className={classes.mainVis}>
-                        <NavLink exact to={'/portforio_pages/works/' + url }>
-                            <img src={image1} alt="" className={classes.mainVisContent} />
-                        </NavLink>
-                        <NavLink exact to={'/portforio_pages/works/' + url +'vis2'}>
-                            <img src={image2} alt="" className={classes.mainVisContent} />
-                        </NavLink>
-                        <NavLink exact to={'/portforio_pages/works/' + url +'vis3'}>
-                            <img src={image3} alt="" className={classes.mainVisContent} />
-                        </NavLink>  
-                    </nav>
+                    {image1 && 
+                        <nav className={classes.mainVis}>
+                                <NavLink exact to={'/portforio_pages/works/' + url }>
+                                    <img src={image1} alt="" className={classes.mainVisContent} />
+                                </NavLink>
+                            {image2 &&
+                                <NavLink exact to={'/portforio_pages/works/' + url +'vis2'}>
+                                    <img src={image2} alt="" className={classes.mainVisContent} />
+                                </NavLink>
+                            }
+                            {image3 &&
+                                <NavLink exact to={'/portforio_pages/works/' + url +'vis3'}>
+                                    <img src={image3} alt="" className={classes.mainVisContent} />
+                                </NavLink>
+                            }
+                        </nav>
+                    }    
                     <div className={classes.workText}>{ text }</div>
                     <div className={`${classes.link} ${classes.flexbox}`}>
                         {link}
                         <a href={githubLink} target="_blank" rel="noopener noreferrer"> <img src={githubIcon} alt="" className={classes.linkImage} /></a>
                     </div>
-                    <Route exact path={'/portforio_pages/works/' + url } component={bigImage1}/>
-                    <Route exact path={'/portforio_pages/works/' + url +'vis2'} component={bigImage2} />
-                    <Route exact path={'/portforio_pages/works/' + url +'vis3'} component={bigImage3} />
+                    {image1 &&
+                        <Route exact path={'/portforio_pages/works/' + url} component={bigImage1} />
+                    }    
+                        <Route exact path={'/portforio_pages/works/' + url +'vis2'} component={bigImage2} />
+                        <Route exact path={'/portforio_pages/works/' + url +'vis3'} component={bigImage3} />
                 </BrowserRouter>
             </div>
         </div>

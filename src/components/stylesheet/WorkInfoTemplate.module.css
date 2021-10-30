@@ -8,7 +8,7 @@
   text-align: center;
   font-size: 3rem;
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   letter-spacing: .1em;
 
   padding: 1rem 3rem;
@@ -25,7 +25,7 @@
 }
 
 .mainVis{
-  margin: 3rem auto;
+  margin: 0rem auto 3rem auto;
 }
 
 .mainVisContent{
@@ -50,6 +50,7 @@
 }
 
 .bigVisContent{
+  width: 70%;
   max-width: 90rem;
   padding: 3rem;
   border: 0.5rem solid #e6e6e6;
