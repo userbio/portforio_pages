@@ -51,7 +51,7 @@ const Navbar = () => (
 
 const Footer = () => (
   <div className={`${classes.fotterContainer} ${classes.flexbox}`}>
-    Matuda Keitarou
+    ©Matuda Keitarou
   </div>
 )
 

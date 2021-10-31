@@ -13,7 +13,7 @@ import portSmall from './images/portSmall.png'
 export const line = () => (
     <WorksInfo
         url="line"
-        title="LINEを用いたアルバイトのシフト集計サービス"
+        title="LINEAPIを用いたアルバイトのシフト集計サービス"
         image1={lineMain}
         image2={lineImage}
         image3={linesample}

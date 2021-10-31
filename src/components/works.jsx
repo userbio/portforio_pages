@@ -22,7 +22,7 @@ export const works = () => {
                     <NavLink exact to='/portforio_pages/works/line' className={classes.worksItem}>
                         <WorksList 
                             image={lineMain} 
-                            name={<>LINEを用いたアルバイトのシフト < br /> 集計サービス</>}
+                            name={<>LINEAPIを用いたアルバイトのシフト < br /> 集計サービス</>}
                             info={<>Python、Flask、LINEAPI</>}
                         />
                     </NavLink>
