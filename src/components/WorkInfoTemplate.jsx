@@ -13,7 +13,9 @@ export const WorksInfo = (props) => {
     return (
         <div className={classes.workContentBox}>
             {console.log()}
-            <div className={classes.workTitle}>{title}</div>
+            {title &&
+                <div className={classes.workTitle}>{title}</div>
+            }
             <div className={`${classes.workContent} ${classes.flexbox}`}>
                 <BrowserRouter>
                     {image1 && 

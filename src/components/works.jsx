@@ -49,6 +49,7 @@ export const works = () => {
                     </NavLink> 
                 </nav>
             </Link>
+                <Route path="/portforio_pages/works" component={defoult}/>
                 <Route path="/portforio_pages/works/line" component={line} />
                 <Route path="/portforio_pages/works/portforio" component={portforio} />
                 <Route path="/portforio_pages/works/IPA" component={IPA} />
