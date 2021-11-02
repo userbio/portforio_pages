@@ -84,7 +84,7 @@ export const hardening = () => (
     />
 )
 
-/*react^scrollのスクロール先として、classnameを持ったCSSModule外のボックスが必要
+/*react-scrollのスクロール先として、classnameを持ったCSSModule外のボックスが必要
   CSSModuleではclassnameが置き換えられるため、スクロール先を指定できない */
 export const defoult = () => (
     <div className="workContentBox"></div>
